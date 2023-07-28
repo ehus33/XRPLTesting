@@ -10,9 +10,13 @@
     <label for="address">Enter XRP Ledger Testnet Address:</label>
     <input type="text" id="address" placeholder="e.g., rU6K7V3Po4snVhBBaU29sesqs2qTQJWDw1" />
     <button id="checkBtn">Check Balance</button>
+    <button id="generateBtn">Generate DID</button>
   </div>
   <div id="result"></div>
+  <div id="didOutput"></div> <!-- This div is for displaying the generated DID -->
 
-  <script src="script.js"></script>
+  <!-- Specify type="module" for ESM support -->
+  <script type="module" src="did.js"></script>
+  <script type="module" src="script.js"></script>
 </body>
 </html>
